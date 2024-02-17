@@ -1,0 +1,16 @@
+{
+ 
+  "development": {
+    "PORT": 3000,
+    "MONGODB_URI": "mongodb://localhost:27017/liquidity_test"
+  },
+  "test": {
+    "PORT": 3000,
+    "MONGODB_URI": "mongodb://localhost:27017/liquidity_testCases"
+  },
+  "production": {
+    "PORT": 3000,
+    "MONGODB_URI": "mongodb://localhost:27017/liquidity_test"
+  }
+}
+
