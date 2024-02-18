@@ -3,7 +3,7 @@ const config = require('config');
 const dbConfig = config.get('dbConfig');
 
 function init() {
-  const databaseUrl = `mongodb+srv://${dbConfig.name}:${dbConfig.password}@${dbConfig.host}/${dbConfig.dbname}?retryWrites=true&w=majority`;
+  const databaseUrl = `mongodb+srv://${process.env.DB_USER_NAME}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}/${process.env.DB_NAME}?retryWrites=true&w=majority`;
   mongoose.connect(databaseUrl, { });
   const db = mongoose.connection;
   db.on('error', console.error.bind(console, 'Connection error:'));

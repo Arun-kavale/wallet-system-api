@@ -1,11 +1,5 @@
 {
-    "dbConfig": {
-      "host": "cluster0.ocjphki.mongodb.net",
-      "name": "Bizzlead",
-      "password": "Bizzlead1255",
-      "dbname": "wallet-trasaction"
-    },
-    "server": {
-      "port": 3000
-    }
+  "server": {
+    "port": 3000
   }
+}
