@@ -1,6 +1,5 @@
 var mongoose = require('mongoose');
 const config = require('config');
-const dbConfig = config.get('dbConfig');
 
 function init() {
   const databaseUrl = `mongodb+srv://${process.env.DB_USER_NAME}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}/${process.env.DB_NAME}?retryWrites=true&w=majority`;
