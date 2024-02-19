@@ -21,13 +21,13 @@ let TransactionSchema = new mongoose.Schema({
     walletId: {
         type: mongoose.Types.ObjectId,
         ref: 'wallet',
-        required: true,
-        index: true
+        required: true
     }
 },{timestamps: { createdAt: 'date' }});
 
 TransactionSchema.statics.CONSTANTS = {};
 TransactionSchema.statics.CONSTANTS.CREDIT = types[0];
 TransactionSchema.statics.CONSTANTS.DEBIT = types[1];
+TransactionSchema.index({ walletId: 1 });
 
 module.exports.Transaction = mongoose.model('Transaction', TransactionSchema);
