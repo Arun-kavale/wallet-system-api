@@ -21,7 +21,8 @@ let TransactionSchema = new mongoose.Schema({
     walletId: {
         type: mongoose.Types.ObjectId,
         ref: 'wallet',
-        required: true
+        required: true,
+        index: true
     }
 },{timestamps: { createdAt: 'date' }});
 
