@@ -35,6 +35,20 @@ Install dependencies
   npm install
 ```
 
+### Environmental Variables
+Set up the following environmental variables before running the application. You can use a tool like .env or set them directly in your deployment environment.
+
+Create a file named .env in the root of your project and add the following variables:
+
+### MongoDB Connection URI
+- `DB_HOST` // DB host URI
+- `DB_NAME` // DataBase Name
+- `DB_PASSWORD` // DB Password
+- `DB_USER_NAME` // DB User Name
+
+### Port for the Node.js server
+`PORT`=3000
+##
 Start the server
 
 ```bash
